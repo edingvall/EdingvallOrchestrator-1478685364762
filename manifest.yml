@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: EdingvallOrchestrator
+  host: EdingvallOrchestrator
+  disk_quota: 1024M
+  services:
+  - Conversation-83
+  - IBM Watson Machine Learning-ry
+  env:
+    CONVERSATION_WORKSPACE_ID: fae6dde6-f08b-44c4-8eb5-b2c5cebcc704
+    PREDICTIVE_ANALYTICS_CONTEXT_ID: score/predictedOffers
